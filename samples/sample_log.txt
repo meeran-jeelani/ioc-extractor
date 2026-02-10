@@ -1,0 +1,8 @@
+Feb 10 10:10:10 server sshd[1234]: Failed password for invalid user admin from 185.220.101.44 port 51122 ssh2
+User clicked http://malicious-login-security.com/update
+Possible phishing sender: support@secure-payments.in
+Downloaded file hash: d41d8cd98f00b204e9800998ecf8427e
+SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+C2 domain: evil-command.xyz
+Redirect: https://evil-command.xyz/panel/login
