@@ -1,0 +1,10 @@
+2026-02-10T11:03:11Z proxy01 HTTP GET http://login-secure-payments.in/update from 192.168.1.20 user=meeran
+2026-02-10T11:03:15Z proxy01 HTTP GET https://evil-command.xyz/panel/login from 192.168.1.20 user=meeran
+2026-02-10T11:03:19Z proxy01 HTTP GET https://cdn-verify-account.com/assets/js/app.js from 192.168.1.20 user=meeran
+2026-02-10T11:03:22Z proxy01 HTTP POST https://malicious-login-security.com/auth from 192.168.1.20 user=meeran
+2026-02-10T11:03:30Z proxy01 Redirect -> https://evil-command.xyz/redirect?to=https://secure-payments.in
+2026-02-10T11:03:44Z proxy01 DNS query for update-checker.net resolved to 104.21.66.12
+2026-02-10T11:03:55Z proxy01 HTTP GET https://pastebin.com/raw/AbCdEf1234 from 192.168.1.20 user=meeran
+2026-02-10T11:04:10Z proxy01 HTTP GET http://198.51.100.77/dropper.exe from 192.168.1.20 user=meeran
+SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+MD5: d41d8cd98f00b204e9800998ecf8427e
