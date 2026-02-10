@@ -1,0 +1,10 @@
+Feb 10 10:10:10 server sshd[1234]: Failed password for invalid user admin from 185.220.101.44 port 51122 ssh2
+Feb 10 10:10:15 server sshd[1234]: Failed password for root from 45.142.122.88 port 40211 ssh2
+Feb 10 10:10:21 server sshd[1234]: Failed password for invalid user test from 103.21.244.10 port 33312 ssh2
+Feb 10 10:10:28 server sshd[1234]: Failed password for invalid user oracle from 91.240.118.172 port 60213 ssh2
+Feb 10 10:10:35 server sshd[1234]: Failed password for root from 185.220.101.44 port 51219 ssh2
+Feb 10 10:10:41 server sshd[1234]: Failed password for invalid user ubuntu from 5.188.86.203 port 49823 ssh2
+Feb 10 10:10:47 server sshd[1234]: Failed password for root from 185.220.101.44 port 51301 ssh2
+Feb 10 10:10:52 server sshd[1234]: Failed password for invalid user admin from 45.142.122.88 port 40321 ssh2
+Feb 10 10:10:59 server sshd[1234]: Failed password for invalid user postgres from 91.240.118.172 port 60411 ssh2
+Feb 10 10:11:05 server sshd[1234]: Failed password for invalid user guest from 103.21.244.10 port 33400 ssh2
