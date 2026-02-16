@@ -1,42 +1,39 @@
 # 🕵️ IOC Extractor (Python)
 
-A lightweight **SOC-style Python CLI tool** that extracts common **Indicators of Compromise (IOCs)** from logs and text files — including **IPs, emails, URLs, domains, and file hashes**.
+A **SOC-style IOC extractor** written in Python.  
+Extracts common Indicators of Compromise (IOCs) from log files and text reports:
 
-Built for **SOC / Blue Team practice** and fast IOC extraction during investigations.
+- IPv4 + IPv6
+- Emails
+- URLs
+- Domains
+- Hashes (MD5 / SHA1 / SHA256)
+ 
+✅ Includes realistic sample logs for testing  
+✅ Supports **Defang mode** for safe sharing of IOCs  
+✅ Exports results to **JSON** and **CSV**  
 
 ---
 
 ## ✨ Features
 
-✅ Extracts:
-- 🌐 IPv4 addresses  
-- 📧 Emails  
-- 🔗 URLs  
-- 🏷️ Domains  
-- 🔐 Hashes: **MD5 / SHA1 / SHA256**
-
-✅ Clean CLI output report  
-✅ Works with any `.txt` log file  
-✅ Includes realistic sample logs for testing  
-✅ No external dependencies (standard library only)
-
----
-
-## 🧠 SOC Relevance
-
-In real SOC work, analysts deal with logs from:
-- SSH authentication failures (brute-force attempts)
-- Web proxy / firewall logs
-- Incident reports / phishing emails
-
-This tool helps quickly extract IOCs for:
-- Threat hunting  
-- Investigation  
-- Enrichment (VirusTotal, AbuseIPDB, etc.)   
+- Extracts:
+  - IPv4 addresses
+  - IPv6 addresses
+  - Emails
+  - URLs
+  - Domains
+  - MD5 / SHA1 / SHA256 hashes
+- Output options:
+  - Terminal report
+  - Save as JSON
+  - Save as CSV
+- Optional **defang** output:
+  - `http://` → `hxxp://`
+  - `https://` → `hxxps://`
+  - `.` → `[.]`
 
 ---
-
-
 
 ## ⚙️ Requirements
 
@@ -48,64 +45,55 @@ This tool helps quickly extract IOCs for:
 
 ## ▶️ How to Run
 
-### 1) Clone the repository
-```bash
-git clone https://github.com/<meeran-jeelani>/ioc-extractor.git
-cd ioc-extractor
-```
+### 1) Run the tool
+From the repo root:
 
-### 2) Run on a log file
 ```bash
 python src/ioc_extractor.py samples/sample_log.txt
 ```
 
----
-
-## 🧪 Test with Sample Logs
-
-### SSH brute-force style logs
+### 2) Save results as JSON
 ```bash
-python src/ioc_extractor.py samples/ssh_failed_log.txt
+python src/ioc_extractor.py samples/sample_log.txt --json output/report.json
 ```
 
-### Web proxy / redirect logs
+### 3) Save results as CSV
 ```bash
-python src/ioc_extractor.py samples/web_proxy_log.txt
+python src/ioc_extractor.py samples/sample_log.txt --csv output/report.csv
+```
+
+### 4) Defang output (safe to share)
+```bash
+python src/ioc_extractor.py samples/sample_log.txt --defang
 ```
 
 ---
 
-## 📌 Output
+## 📊 Output Example (Summary)
 
-The tool prints a structured report containing:
+The tool prints a summary at the top:
 
-- IPv4 addresses
-- Emails
-- URLs
-- Domains
-- Hashes (MD5 / SHA1 / SHA256)
+- Total IOCs found
+- Counts per category (IPs, domains, URLs, hashes, etc.)
 
-This makes it easy to copy-paste IOCs into SOC tools or threat intel platforms.
+Then prints the full extracted lists.
 
 ---
 
-## 🚀 Future Enhancements (Planned)
+## 📌 Project Status
 
-- Defang support (e.g., `hxxp://`, `[.]`, `[:]`)
-- IPv6 IOC extraction
-- Improved domain detection (more TLD support)
-- Cleaner output + top summary line
-
+✅ **Final Release: v1.1**  
+This project is complete and will not receive further feature updates.
 
 ---
 
-## 🧑‍💻 Author
+## 👤 Author
 
 Built by **Meeran Jeelani**  
-Cybersecurity student | SOC
+Cybersecurity Student
 
 ---
 
-## 📜 License
+## 📄 License
 
-This project is licensed under the **MIT License**.
+MIT License
